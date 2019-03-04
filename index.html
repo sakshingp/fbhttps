@@ -53,6 +53,12 @@
     window._pcq = window._pcq || [];
     window._pcq.push(['tag', 'AUTOMATION', 'E2E-Auto']);
 </script>
+<script>
+    _pcq.push(['APIReady', callbackFunction]); //check for the readiness of the pushcrew API
+function callbackFunction() {
+_pcq.push(['triggerOptIn',{modal: {text:{SUBSCRIBE:'This is for subscription.', BLOCKED:'This is blocked.', ALREADYSUBSCRIBED:'This is already subscribed.'}, blackenBackground: true}}]); 
+}
+</script>
 <style>
 .button {
     background-color: #4CAF50;
